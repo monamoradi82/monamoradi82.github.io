@@ -4,390 +4,207 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mona Moradi</title>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f8fafc;
-}
+/* Reset & Global */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f5f7fa; color: #1f2937; scroll-behavior: smooth; }
+a { text-decoration: none; color: #0ea5e9; }
+a:hover { text-decoration: underline; }
 
-nav {
-  position: fixed;
-  width: 100%;
-  background: #0f172a;
-  padding: 15px;
-  text-align: center;
-}
+/* Navigation */
+nav { position: fixed; top:0; width: 100%; background: #0f172a; color: #fff; padding: 15px 20px; z-index: 1000; display: flex; justify-content: center; gap: 20px; font-weight: 500; }
+nav a { color: #fff; transition: color 0.3s; }
+nav a:hover { color: #0ea5e9; }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
+/* Hero Section */
 .hero {
   height: 100vh;
   background: linear-gradient(to right, #1e293b, #0ea5e9);
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  text-align: center;
-}
-
-section {
-  padding: 80px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 10px;
-}
-
-.pub {
-  margin-bottom: 15px;
-  padding: 15px;
-  background: #eef2ff;
-  border-radius: 8px;
-}
-
-footer {
-  background: #0f172a;
-  color: white;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 20px;
 }
+.hero img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #fff; margin-bottom: 20px; object-fit: cover; }
+.hero h1 { font-size: 3em; margin-bottom: 10px; }
+.hero p { font-size: 1.3em; color: #cbd5e1; }
+
+/* Sections */
+section { padding: 80px 20px; max-width: 1000px; margin: auto; }
+h2 { font-size: 2em; margin-bottom: 20px; border-bottom: 3px solid #0ea5e9; display: inline-block; padding-bottom: 5px; }
+
+/* Card Style */
+.card { background: #fff; padding: 25px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+ul { list-style-type: disc; margin-left: 20px; }
+
+/* Publications */
+.pub { margin-bottom: 15px; padding: 15px; background: #eef2ff; border-radius: 8px; }
+
+/* Footer */
+footer { background: #0f172a; color: #fff; text-align: center; padding: 20px; margin-top: 50px; }
+footer a { color: #0ea5e9; }
 </style>
 </head>
-
 <body>
 
+<!-- Navigation -->
 <nav>
   <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
   <a href="#publications">Publications</a>
+  <a href="#projects">Projects</a>
+  <a href="#hobbies">Hobbies</a>
   <a href="#contact">Contact</a>
 </nav>
 
+<!-- Hero Section -->
 <div class="hero">
+  <img src="https://via.placeholder.com/150" alt="Mona Moradi">
   <h1>Mona Moradi</h1>
   <p>AI • IoT • Hardware Security Researcher</p>
 </div>
 
+<!-- About -->
 <section id="about">
   <h2>About Me</h2>
   <div class="card">
     <p>
-      I am an AI Engineer specializing in Machine Learning, Edge AI, and IoT for digital healthcare. 
-      My work focuses on developing real-time, on-device intelligence for medical applications, 
-      improving latency, security, and scalability across distributed healthcare environments.
+      I am an AI Engineer specializing in Machine Learning, Edge AI, and IoT for digital healthcare. My work focuses on developing real-time, on-device intelligence for medical applications, improving latency, security, and scalability across distributed healthcare environments.
     </p>
-
     <p>
-      Currently, I am involved in designing AI-driven healthcare monitoring systems and secure IoT architectures, 
-      while actively contributing to European research and innovation initiatives. 
-      I have recently designed and developed an AI-powered mobile health application within the Proximity Care 
-      and Tuscany Health Ecosystem (THE) projects, integrating Edge AI, IoT connectivity, and voice-based risk detection.
+      With over 10 years of experience in academia and industry, I bring expertise in computer engineering, computer architecture, and hardware design, including VLSI and nanoscale technologies. I enjoy working at the edge of emerging technologies, bridging advanced research with real-world applications.
     </p>
-
     <p>
-      With over 10 years of experience across academia and industry, I bring a strong background in computer engineering, 
-      computer architecture, and hardware design, including VLSI and nanoscale technologies. 
-      I am particularly interested in working at the edge of emerging technologies and bridging the gap between 
-      advanced research and real-world applications.
-    </p>
-
-    <p>
-      Beyond research, I enjoy exploring new places and cultures. I also have a strong interest in historical and 
-      novel literature, especially in history and philosophy, where I continuously seek new perspectives and insights.
+      Beyond research, I enjoy exploring new places and cultures. I am particularly fond of music, books, and new experiences. I am also an avid reader of historical and philosophical literature, continuously seeking new perspectives and insights.
     </p>
   </div>
 </section>
+
+<!-- Education -->
 <section id="education">
   <h2>Education</h2>
-
-  <!-- PhD -->
   <div class="card">
     <h3>Ph.D. in Computer Engineering (Computer Architecture)</h3>
-    <p><strong>Institution:</strong> Faculty of Computer and Electrical Engineering, Islamic Azad University, Science and Research Branch, Tehran, Iran</p>
-    <p><strong>Duration:</strong> February 2011 – September 2015</p>
+    <p><strong>Institution:</strong> Islamic Azad University, Science and Research Branch, Tehran, Iran</p>
+    <p><strong>Duration:</strong> Feb 2011 – Sep 2015</p>
     <p><strong>Thesis:</strong> Designing Computational Circuits Based on Current Mode Multi-Valued Logic Using CNTFET Technology</p>
-    <p><strong>Abstract:</strong> This research focused on the design of multi-valued logic circuits using CNTFET technology to improve computational performance, reduce transistor count, and enhance efficiency in VLSI systems. Key contributions include novel ternary multipliers, decoders, and full-adder circuits, validated through Hspice 32nm simulations.</p>
-    <p><strong>Funding:</strong> Supported by the Presidential Nanotechnology Initiative, Iran, inspired by the National Nanotechnology Initiative (USA), aiming to develop national nanotechnology priorities and facilitate R&D in both academic and industrial sectors.</p>
+    <p><strong>Funding:</strong> Presidential Nanotechnology Initiative, Iran</p>
   </div>
-
-  <!-- Master -->
   <div class="card">
     <h3>Master of Science in Computer Engineering (Computer Architecture)</h3>
-    <p><strong>Institution:</strong> Faculty of Computer and Electrical Engineering, Islamic Azad University, Science and Research Branch, Tehran, Iran</p>
-    <p><strong>Duration:</strong> September 2009 – September 2011</p>
+    <p><strong>Institution:</strong> Islamic Azad University, Science and Research Branch, Tehran, Iran</p>
+    <p><strong>Duration:</strong> Sep 2009 – Sep 2011</p>
     <p><strong>Thesis:</strong> Advanced Single-Bit Full Adder Designs Using CNTFET Technology</p>
-    <p><strong>Abstract:</strong> Focused on designing and evaluating single-bit full adder circuits with CNTFET and MOSFET technologies. Proposed CNTFET designs demonstrated improved speed, power efficiency, and reduced area compared to conventional MOSFET-based circuits.</p>
-    <p><strong>Funding:</strong> Supported by the Presidential Nanotechnology Initiative, Iran, following national strategies for advanced nanotechnology research, with guidance from governmental and private sectors.</p>
+    <p><strong>Funding:</strong> Presidential Nanotechnology Initiative, Iran</p>
   </div>
-
-  <!-- Bachelor -->
   <div class="card">
     <h3>Bachelor of Science in Computer Hardware Engineering</h3>
-    <p><strong>Institution:</strong> Faculty of Computer and Electrical Engineering, Islamic Azad University, Central Branch, Tehran, Iran</p>
-    <p><strong>Duration:</strong> September 2000 – September 2005</p>
+    <p><strong>Institution:</strong> Islamic Azad University, Central Branch, Tehran, Iran</p>
+    <p><strong>Duration:</strong> Sep 2000 – Sep 2005</p>
   </div>
-
 </section>
 
-  <section id="experience">
+<!-- Experience -->
+<section id="experience">
   <h2>Professional Experience</h2>
-
-  <!-- Research Fellow -->
   <div class="card">
     <h3>Research Fellow – Scuola Superiore Sant’Anna, Italy</h3>
     <p><strong>Duration:</strong> 2024 – Present</p>
     <ul>
-      <li>Conduct research in AI, IoT, hardware security, and healthcare applications.</li>
-      <li>Participated in EU Horizon Europe proposals, contributing to project design, drafting technical and scientific sections, and coordinating multi-institutional partners.</li>
-      <li>Managed collaborative work packages, timelines, and deliverables across international research teams.</li>
+      <li>Research in AI, IoT, hardware security, and healthcare applications.</li>
+      <li>EU Horizon Europe proposal participation and multi-institution coordination.</li>
+      <li>Managed collaborative work packages, timelines, and deliverables.</li>
     </ul>
   </div>
-
-  <!-- Assistant Professor -->
   <div class="card">
     <h3>Assistant Professor – Islamic Azad University, Iran</h3>
     <p><strong>Duration:</strong> 2016 – 2024</p>
     <ul>
-      <li>Designed and delivered courses in AI, Machine Learning, IoT, Cybersecurity, Computer Architecture, VLSI, and Signal Processing.</li>
-      <li>Supervised student research and coordinated collaborative projects, fostering cross-departmental initiatives.</li>
+      <li>Courses: AI, Machine Learning, IoT, Cybersecurity, VLSI, Signal Processing.</li>
+      <li>Student supervision and cross-departmental project coordination.</li>
     </ul>
   </div>
-
-  <!-- Lecturer -->
-  <div class="card">
-    <h3>Lecturer – Islamic Azad University, Iran</h3>
-    <p><strong>Duration:</strong> 2011 – 2024</p>
-    <ul>
-      <li>Developed curricula and implemented hands-on research activities for undergraduate and postgraduate students.</li>
-    </ul>
-  </div>
-
-  <!-- Visiting Researcher -->
-  <div class="card">
-    <h3>Visiting Researcher – Shahid Beheshti University (2012–2018), IPM (2013–2016)</h3>
-    <ul>
-      <li>Conducted joint research projects in IC design, nanotechnology, and hardware security with international collaborators.</li>
-    </ul>
-  </div>
-
-  <!-- R&D Specialist -->
-  <div class="card">
-    <h3>R&D Specialist – Nashrafa Green Media Co., Iran</h3>
-    <p><strong>Duration:</strong> 2011 – 2015</p>
-    <ul>
-      <li>Led development of innovative ICT solutions and coordinated technical teams for product development.</li>
-    </ul>
-  </div>
-
-  <!-- Artificial Agriculture Project -->
   <div class="card">
     <h3>Artificial Agriculture Project – Saffron Farms, Mashhad, Iran</h3>
     <p><strong>Duration:</strong> 2023 – Present</p>
     <ul>
-      <li>Developing AI-driven models for optimizing saffron cultivation and monitoring environmental parameters.</li>
-      <li>Applying IoT sensors and data analytics to improve yield, quality, and resource management.</li>
-    </ul>
-  </div>
-
-</section>
-  <section id="skills">
-  <h2>Technical Skills & Tools</h2>
-
-  <!-- Research & Development -->
-  <div class="card">
-    <h3>Research & Development</h3>
-    <ul>
-      <li>Artificial Intelligence (AI), Machine Learning, Deep Learning</li>
-      <li>Internet of Things (IoT) & Internet of Medical Things (IoMT)</li>
-      <li>Hardware Security & Cryptography</li>
-      <li>Quantum Computing & Photonics</li>
-      <li>Data Science & Predictive Analytics</li>
-    </ul>
-  </div>
-
-  <!-- Programming & Software -->
-  <div class="card">
-    <h3>Programming & Software</h3>
-    <ul>
-      <li>C, C++, Python, Dart</li>
-      <li>Flutter for Mobile App Development</li>
-      <li>MATLAB, VHDL</li>
-      <li>Xilinx ISE, Vivado, Synopsys HSPICE</li>
-      <li>Figma, FigJam, Jamboard</li>
-    </ul>
-  </div>
-
-  <!-- Project Management -->
-  <div class="card">
-    <h3>Project Management</h3>
-    <ul>
-      <li>Agile Methodologies: Scrum, Kanban, XP</li>
-      <li>Multi-partner project coordination</li>
-      <li>Proposal writing, work packages, KPIs, budgets</li>
-    </ul>
-  </div>
-
-  <!-- Other Tools & Platforms -->
-  <div class="card">
-    <h3>Other Tools & Platforms</h3>
-    <ul>
-      <li>Linux & Virtual Machines</li>
-      <li>IC Design, VLSI & MOSFET/CNTFET Technology</li>
-      <li>FPGA design & simulation</li>
-      <li>Power BI for data visualization</li>
+      <li>Developing AI-driven models for optimizing saffron cultivation.</li>
+      <li>Applying IoT sensors and data analytics to improve yield and quality.</li>
     </ul>
   </div>
 </section>
-<section id="research">
-  <h2>Research Projects & Publications</h2>
 
-  <!-- Links -->
+<!-- Publications -->
+<section id="publications">
+  <h2>Selected Publications</h2>
   <div class="card">
-    <h3>Find My Profiles</h3>
-    <ul>
-      <li><a href="https://scholar.google.com/citations?user=aDG41TkAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
-      <li><a href="https://www.researchgate.net/profile/Mona-Moradi-2" target="_blank">ResearchGate</a></li>
-      <li><a href="https://orcid.org/0000-0001-8146-4541" target="_blank">ORCID</a></li>
-      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=55399501200" target="_blank">Scopus</a></li>
-    </ul>
-  </div>
-
-  <!-- Publications -->
-  <div class="card">
-    <h3>Selected Publications</h3>
-
-    <div class="pub">
-      <strong>1.</strong> M. Moradi, M. Gharbaoui, A. Pacini, A. Giannoni, C. Passino, M. Emdin, S. Dalmiani, P. Marcheschi, L. Valcarenghi. 
-      “On-Device AI for Voice-Driven Multi-Parameter Health-Risk Monitoring,” <em>TELMED 2026</em>, IEEE PerCom 2026.
-    </div>
-
-    <div class="pub">
-      <strong>2.</strong> M. Gharbaoui, M. Moradi, A. Pacini, A. Giannoni, C. Passino, M. Emdin, S. Dalmiani, P. Marcheschi, L. Valcarenghi. 
-      “Next‑Generation Healthcare: A Secure and Voice‑Driven App for Seamless Patient Engagement,” <em>IEEE ISCC 2025</em>, DOI: 10.1109/ISCC65549.2025.11326491.
-    </div>
-
-    <div class="pub">
-      <strong>3.</strong> M. Moeini, A. Broumandnia, M. Moradi, “A Personalized Web Recommendation System Based on a Weighted User Behavior Profile by Applying Extended Learning Method,” 
-      <em>International Journal of Engineering</em>, 2025, Vol. 38, Issue 4.
-    </div>
-
-    <div class="pub">
-      <strong>4.</strong> M. SaberiKamarposhti, K.W. Ng, F.F. Chua, J. Abdullah, M. Yadollahi, M. Moradi, S. Ahmadpour, 
-      “Post‑quantum Healthcare: A Roadmap for Cybersecurity Resilience in Medical Data,” <em>Heliyon</em>, 2024.
-    </div>
-
-    <div class="pub">
-      <strong>5.</strong> M. Moradi, “Designing an Improved Reversible Optical HNG Cell Based on MZI Switches,” 
-      <em>International Journal of Smart Electrical Engineering</em>, 2022.
-    </div>
-
-    <div class="pub">
-      <strong>6.</strong> M.T. Fatehi Khaje, M. Moradi, K. Navi, “Using Physically Unclonable Function for Increasing Security of Internet of Things,” 
-      <em>International Conference on Applied Cybersecurity (ACS)</em>, Springer, 2021.
-    </div>
-
-    <div class="pub">
-      <strong>7.</strong> Y. Mehrabani, Y.Safaei, F.F. Chua, K.W. Ng, M. Moradi, “A Novel Efficient CNFET‑Based Inexact Full Adder Design for Image Processing Applications,” 
-      <em>International Journal of Nanoscience</em>, 2021.
-    </div>
-
-    <div class="pub">
-      <strong>8.</strong> M. Moradi, R. Faghih Mirzaee, S. Tao, “CMOS Arbiter Physical Uncloneable Function with Selecting Modules,” 
-      <em>20th International Symposium on Computer Architecture and Digital Systems (CADS ’20)</em>, 2021.
-    </div>
-
-    <!-- Continue with the remaining -->
-    <div class="pub">
-      <strong>9.</strong> M.H. Bagheri, M. Bagherizadeh, M. Moradi, M.H. Moaiyeri, “Design of CNTFET‑Based Current‑Mode Multi‑Input Counters,” 
-      <em>IETE Journal of Research</em>, 2018.
-    </div>
-
-    <div class="pub">
-      <strong>10.</strong> M. Bagherizadeh, M. Moradi, M. Torbi, “High Performance Four‑to‑Two Compressor Cell Based on CNTFET,” 
-      <em>International Journal of Electrical and Computer Engineering (IJECE)</em>, 2018.
-    </div>
-
-    <div class="pub">
-      <strong>11.</strong> M. Moradi, “Two State‑of‑the‑Art Current‑Mode Ternary Full Adders Based on CNTFET Technology,” 
-      <em>International Journal of Electrical and Computer Engineering (IJECE)</em>, 2018.
-    </div>
-
-    <div class="pub">
-      <strong>12.</strong> M. Moradi, M. Farahan, “Low Power and Highly Efficient Full Adder Cells Based on CNTFET Technology,” 
-      <em>International Journal of Nanoelectronics and Materials</em>, 2018.
-    </div>
-
-    <div class="pub">
-      <strong>13.</strong> M. Moradi, S. Tao, R. Faghih Mirzaee, “Physical Unclonable Functions Based on Carbon Nanotube FETs,” 
-      <em>IEEE 47th International Symposium on Multiple‑Valued Logic</em>, 2017.
-    </div>
-
-    <div class="pub">
-      <strong>14.</strong> M. Moradi, “Design of an ASIP Processor for Mathematical Functions,” 
-      <em>International Journal of Computer (IJC)</em>, 2017.
-    </div>
-
-    <div class="pub">
-      <strong>15.</strong> M. Moradi, R. Faghih Mirzaee, K. Navi, “Ternary versus Binary Multiplication with CNTFET‑Based Converters,” 
-      <em>IEEE 46th International Symposium on Multiple‑Valued Logic</em>, 2016.
-    </div>
-
-    <div class="pub">
-      <strong>16.</strong> M. Moradi, R. Faghih Mirzaee, K. Navi, “Binary Current‑Mode Multipliers by CNTFET n‑Valued Converters,” 
-      <em>IEICE Transactions on Electronics</em>, 2016.
-    </div>
-
-    <div class="pub">
-      <strong>17.</strong> M. Moradi, K. Navi, “New Current‑Mode Ternary Full Adder Circuits Based on CNTFET Technology,” 
-      <em>Journal of Computational and Theoretical Nanoscience</em>, 2016.
-    </div>
-
-    <div class="pub">
-      <strong>18.</strong> M. Moradi, R. Faghih Mirzaee, “Integrated Ternary Circuits Without Constant Independent Current Sources,” 
-      <em>Journal of Electrical and Computer Engineering</em>, 2015.
-    </div>
-
-    <div class="pub">
-      <strong>19.</strong> M. Moradi, R.F. Mirzaee, M.H. Moaiyeri, K. Navi, “High‑Speed and High‑Efficient Full Adder Cell by CNTFETs,” 
-      <em>CADS 2012</em>, 2012.
-    </div>
-
-    <div class="pub">
-      <strong>20.</strong> M. Moradi, K. Navi, “Performance Analysis of Modified 1‑Bit Full Adder Cells Based on CNTFET Technology,” 
-      <em>European Journal of Scientific Research</em>, 2011.
-    </div>
-
+    <div class="pub"><strong>1.</strong> M. Moradi et al., “On-Device AI for Voice-Driven Multi-Parameter Health-Risk Monitoring,” TELMED 2026.</div>
+    <div class="pub"><strong>2.</strong> M. Gharbaoui, M. Moradi et al., “Next‑Generation Healthcare: A Secure and Voice‑Driven App,” IEEE ISCC 2025.</div>
+    <div class="pub"><strong>3.</strong> M. Moeini, A. Broumandnia, M. Moradi, “Personalized Web Recommendation System,” International Journal of Engineering, 2025.</div>
+    <div class="pub"><strong>4.</strong> M. SaberiKamarposhti et al., “Post‑quantum Healthcare: A Roadmap for Cybersecurity Resilience in Medical Data,” Heliyon, 2024.</div>
+    <div class="pub"><strong>5.</strong> M. Moradi, “Designing an Improved Reversible Optical HNG Cell Based on MZI Switches,” International Journal of Smart Electrical Engineering, 2022.</div>
+    <div class="pub"><strong>6.</strong> M.T. Fatehi Khaje et al., “Using Physically Unclonable Function for Increasing Security of IoT,” ACS 2021.</div>
+    <div class="pub"><strong>7.</strong> Y. Mehrabani et al., “A Novel Efficient CNFET‑Based Inexact Full Adder Design for Image Processing Applications,” IJN 2021.</div>
+    <div class="pub"><strong>8.</strong> M. Moradi et al., “CMOS Arbiter Physical Uncloneable Function with Selecting Modules,” CADS 2020.</div>
+    <div class="pub"><strong>9.</strong> M.H. Bagheri et al., “Design of CNTFET‑Based Current‑Mode Multi‑Input Counters,” IETE Journal of Research, 2018.</div>
+    <div class="pub"><strong>10.</strong> M. Bagherizadeh et al., “High Performance Four‑to‑Two Compressor Cell Based on CNTFET,” IJECE, 2018.</div>
+    <div class="pub"><strong>11.</strong> M. Moradi, “Two State-of-the-Art Current‑Mode Ternary Full Adders Based on CNTFET Technology,” IJECE, 2018.</div>
+    <div class="pub"><strong>12.</strong> M. Moradi, M. Farahan, “Low Power and Highly Efficient Full Adder Cells Based on CNTFET Technology,” IJNM, 2018.</div>
+    <div class="pub"><strong>13.</strong> M. Moradi, S. Tao, R. Faghih Mirzaee, “Physical Unclonable Functions Based on Carbon Nanotube FETs,” IEEE MVL 2017.</div>
+    <div class="pub"><strong>14.</strong> M. Moradi, “Design of an ASIP Processor for Mathematical Functions,” IJC 2017.</div>
+    <div class="pub"><strong>15.</strong> M. Moradi et al., “Ternary vs Binary Multiplication with CNTFET-Based Converters,” IEEE MVL 2016.</div>
+    <div class="pub"><strong>16.</strong> M. Moradi et al., “Binary Current‑Mode Multipliers by CNTFET n‑Valued Converters,” IEICE 2016.</div>
+    <div class="pub"><strong>17.</strong> M. Moradi, K. Navi, “New Current‑Mode Ternary Full Adder Circuits Based on CNTFET Technology,” Journal of Computational and Theoretical Nanoscience, 2016.</div>
+    <div class="pub"><strong>18.</strong> M. Moradi, R. Faghih Mirzaee, “Integrated Ternary Circuits Without Constant Independent Current Sources,” J. Electrical and Computer Engineering, 2015.</div>
+    <div class="pub"><strong>19.</strong> M. Moradi et al., “High‑Speed and High‑Efficient Full Adder Cell by CNTFETs,” CADS 2012.</div>
+    <div class="pub"><strong>20.</strong> M. Moradi, K. Navi, “Performance Analysis of Modified 1‑Bit Full Adder Cells Based on CNTFET Technology,” European Journal of Scientific Research, 2011.</div>
   </div>
 </section>
 
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <ul>
+      <li>AI-powered mobile health application: Proximity Care & Tuscany Health Ecosystem (THE) projects.</li>
+      <li>AI-based hardware security models and IoT monitoring systems.</li>
+      <li>Artificial Agriculture: AI & IoT for saffron farms in Mashhad, Iran (2023 – Present).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Hobbies -->
+<section id="hobbies">
+  <h2>Hobbies</h2>
+  <div class="card">
+    <ul>
+      <li>Exploring new places and cultures</li>
+      <li>Hiking, trekking, cycling</li>
+      <li>Reading historical and philosophical literature</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact -->
 <section id="contact">
   <h2>Contact</h2>
   <div class="card">
     📧 Mo.moradi90@gmail.com <br>
-    🔗 Google Scholar | ResearchGate | ORCID
+    🔗 <a href="https://scholar.google.com/citations?user=aDG41TkAAAAJ&hl=en" target="_blank">Google Scholar</a> | 
+    <a href="https://www.researchgate.net/profile/Mona-Moradi-2" target="_blank">ResearchGate</a> | 
+    <a href="https://orcid.org/0000-0001-8146-4541" target="_blank">ORCID</a>
   </div>
 </section>
 
 <footer>
   © Mona Moradi
 </footer>
-
 </body>
 </html>
